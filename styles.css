@@ -20,8 +20,9 @@ main{
   grid-template-columns: 250px 1fr;  /* 250px meny | resten innehåll */
 
   max-width: 1200px;
-  margin: 20px auto;      /* centrerar layouten */
-  margin-top: 0px;      /*tar bort gapet mellan sidmeny och header*/
+  margin: 0px auto;      /* centrerar layouten */
+ 
+  align-items: start;  /* hindrar höjden på main från att strechas tillsammans med sidemenu*/
 }
 
 header h2{
@@ -97,14 +98,29 @@ section {
   background: rgba(20, 28, 36, 0.9);  /* mörkgrå med en opacity*/
   color:white;                      
   padding: 30px;
-  justify-self: center;      /* centrerar rutan i kolumnen */
-  margin-top: 50px;
+  margin: 50px auto 0;
   border-radius: 10px;                  /* mjuka hörn */
   box-shadow: 0 14px 25px rgba(0,0,0,.75);
   width: 70%;           /* sätter faktiskt bredden */
 }
 
 section h3{
-  color: #e10600;                        /* F1-rött till rubriker */
+  color: #ff716c;                        /* F1-rött till rubriker */
   margin-top: 0;
+}
+
+footer {
+  background: #141c24;
+  color: #ccc;
+  text-align: center;
+  padding: 20px 0px;
+  
+  border-top: 2px solid rgba(255,255,255,0.1);
+  font-size: 14px;
+  max-width: 1200px;
+   margin: 0px auto; 
+}
+
+.footParagraf a{
+  color: white;
 }
