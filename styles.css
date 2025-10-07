@@ -1,0 +1,84 @@
+header{
+  background-image: url("img/Header.jpg");
+  background-size: cover;  
+  background-position: center;
+  height: 300px;  
+  max-width: 1200px;
+  margin: 20px auto;        /* centrerar layouten */
+  margin-bottom: 0px;
+
+}
+
+main{
+  display: grid;
+  grid-template-columns: 250px 1fr;  /* 250px meny | resten innehåll */
+  gap: 50px;
+  max-width: 1200px;
+  margin: 20px auto;        /* centrerar layouten */
+  margin-top: 0px;
+}
+
+header h2{
+  text-align: center;
+  font-size: 45px;
+  margin-bottom: 0px;
+  padding-top: 10px;
+  color: white;
+  text-shadow: 1px 1px 5px black;
+}
+
+header h1{
+  text-align: center;
+  font-size: 65px;
+  margin-top: 0px;
+  color: red;
+  text-shadow: 1px 1px 5px black;
+}
+
+.sidebar{
+  
+  background-image: url("img/Sidebar.png");
+  min-height: 100vh;      /* hela fönstrets höjd */
+  background-size: cover;
+  background-position: center;
+  padding-left: 15%;
+  line-height: 40px;
+  color: white;
+}
+
+.sidebar h3 {
+  text-align: center;         /* centrerar texten */
+  margin: 0 0 25px 0;         /* lite luft under rubriken */
+  padding-bottom: 8px;        /* luft ovanför linjen */
+  font-size: 1.7rem;          /* något större text */
+  font-weight: 700;
+  color: red;             /* F1-rött */
+  text-shadow: 1px 1px 4px black;
+
+  border-bottom: 2px solid rgba(255,255,255,0.2);  /* tunn linje under */
+  display: inline-block;    /* gör att linjen inte fyller hela sidomenyn */
+}
+
+.sidebar ul {
+  list-style: none;       /* ta bort punkter */
+  padding: 0;
+  margin-top: 20px;     /* lite luft uppåt */
+}
+
+.sidebar a {
+
+  padding: 10px 16px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 1.4rem;
+  transition: all 0.5s ease;     
+}
+
+.sidebar a:hover {
+  background: rgba(225, 6, 0, 0.85);       /* F1-röd på hover */
+}
+
+.sidebar li {
+  margin-bottom: 15px;    /* mellanrum mellan länkar */
+}
