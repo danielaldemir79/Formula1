@@ -22,7 +22,7 @@ main{
   max-width: 1200px;
   margin: 0px auto;      /* centrerar layouten */
  
-  align-items: start;  /* hindrar höjden på main från att strechas tillsammans med sidemenu*/
+  align-items:start;  /* hindrar höjden på main från att strechas tillsammans med sidemenu*/
 }
 
 header h2{
@@ -128,5 +128,14 @@ footer {
 
 .teams{
   color:#ff716c;
+  font-size: 1.2em;
+}
+
+.driver-spotlight{
+  margin: 50px auto;
+}
+
+.driver{
+  color:#6ca0ff;
   font-size: 1.2em;
 }
